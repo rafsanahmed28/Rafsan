@@ -106,8 +106,8 @@
   color: var(--lightest-slate);
   text-align: left;
   letter-spacing: 0.02em;
-  line-height: 2;
   font-size: 36px;
+  max-width: 600px;
 }
 
 .intro-subtitle-name {
@@ -151,6 +151,7 @@
 
   .intro-subtitle {
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 
@@ -230,6 +231,7 @@
     margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
+    max-width: 350px;
   }
   
   .intro-subtitle-name {

@@ -177,12 +177,12 @@ const Intro = () => {
         </div>
         
         <div className="intro-subtitle" ref={subtitleRef}>
-          A <span className="intro-subtitle-name">Data Analyst</span> with a love for design.
+          I'm an <span className="intro-subtitle-name">AI Automation & Data Engineer</span> with a love for web development.
         </div>
         
         <div className="intro-desc" ref={descRef}>
-          I'm a techie who loves working with numbers and graphics. I thrive on solving problems using analytical skills and
-          creating powerful and insightful visualizations.
+          I’m a builder at heart who loves solving problems. Whether it’s streamlining tasks, connecting systems, 
+          or experimenting with new tools, I enjoy creating solutions that work smarter and faster.
         </div>
         
         <div className="intro-buttons" ref={buttonsRef} >
