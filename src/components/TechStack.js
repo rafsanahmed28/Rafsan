@@ -4,27 +4,35 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../styles/TechStack.css";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
-import { 
-  SiMysql, SiPostgresql, SiTableau, SiPython, 
-  SiPandas, SiNumpy, SiJupyter,
-  SiR, SiGit, SiFigma,
-  SiAdobeillustrator, SiAdobephotoshop
+import {
+  SiMysql, SiPostgresql, SiTableau, SiPython,
+  SiPandas, SiNumpy, SiJupyter, SiGit, SiFigma,
+  SiAdobeillustrator, SiAdobephotoshop, SiJavascript,
+  SiReact, SiHtml5, SiCss3, SiDocker, SiN8N, SiClaude
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const techStackData = [
   { name: "MySQL", icon: <SiMysql />, color: "#00758F" },
   { name: "PostgreSQL", icon: <SiPostgresql />, color: "#336791" },
-  { name: "Excel", icon: <RiFileExcel2Fill />, color: "#217346" },
-  { name: "Tableau", icon: <SiTableau />, color: "#E97627" },
   { name: "Python", icon: <SiPython />, color: "#3776AB" },
   { name: "Pandas", icon: <SiPandas />, color: "#150458" },
   { name: "NumPy", icon: <SiNumpy />, color: "#013243" },
-  { name: "R", icon: <SiR />, color: "#276DC3" },
+  { name: "Excel", icon: <RiFileExcel2Fill />, color: "#217346" },
+  { name: "Tableau", icon: <SiTableau />, color: "#E97627" },
+  { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
+  { name: "React", icon: <SiReact />, color: "#61DAFB" },
+  { name: "HTML", icon: <SiHtml5 />, color: "#E34F26" },
+  { name: "CSS", icon: <SiCss3 />, color: "#1572B6" },
   { name: "VS Code", icon: <VscVscode />, color: "#007ACC" },
   { name: "Git", icon: <SiGit />, color: "#F05032" },
   { name: "Jupyter", icon: <SiJupyter />, color: "#F37626" },
+  { name: "n8n", icon: <SiN8N />, color: "#EF6537" },
+  { name: "Claude", icon: <SiClaude />, color: "#EF6537" },
+  { name: "Docker", icon: <SiDocker />, color: "#2496ED" },
+  { name: "AWS", icon: <FaAws />, color: "#FF9900" },
   { name: "Figma", icon: <SiFigma />, color: "#F24E1E" },
   { name: "Illustrator", icon: <SiAdobeillustrator />, color: "#FF9A00" },
   { name: "Photoshop", icon: <SiAdobephotoshop />, color: "#31A8FF" },

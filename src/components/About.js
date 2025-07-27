@@ -69,7 +69,7 @@ const About = () => {
           </p>
 
           <p ref={el => textRefs.current[3] = el}>
-          While building this website, I used AI tools like ChatGPT, Claude Code and GitHub Copilot, which made me realize the transformative power of AI and its future in tech. That experience led me to explore local AI models for more data-secure solutions and sparked my interest in automation workflows. Since then, I’ve been focused on connecting the best of both worlds - AI and automation - to build smooth, scalable systems for data pipelines and beyond.           
+          While building this website, I used AI tools like ChatGPT, Claude Code and GitHub Copilot, which made me realize the transformative power of AI and its future in tech. That experience led me to explore local AI models for more data-secure solutions and sparked my interest in automation workflows. Since then, I’ve been focused on connecting the best of both worlds - AI and automation; to build smooth, scalable systems for data pipelines and beyond.           
           </p>
 
           <p ref={el => textRefs.current[4] = el}>

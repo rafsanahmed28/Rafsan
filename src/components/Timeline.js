@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FcGraduationCap, FcIdea, FcBriefcase, FcGoogle, FcAcceptDatabase, FcStatistics } from "react-icons/fc";
+import { FcGraduationCap, FcIdea, FcBriefcase, FcGoogle, FcStatistics, FcGlobe } from "react-icons/fc";
+import { SiOpenai } from "react-icons/si";
 import "../styles/Timeline.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -36,18 +37,24 @@ const milestones = [
 
   },
   {
-    title: "First Data Projects",
-    description: "Built my first portfolio projects (Covid-19 and Cyclistic), analyzing real-world datasets using Excel, MySQL and creating visualizations with Tableau.",
-    year: "Sep 2024 - Dec 2024",
-    type: "project"
-  },
-  {
-    title: "Advanced Data Analysis & Storytelling",
-    description: "Deepened my skills in advanced data analysis techniques, delving deeper into advanced SQL queries,  and diving into Python to unlock even more powerful ways to explore, manipulate, and tell stories with data.",
-    year: "Jan 2025 - Present",
-    type: "statistics",
+    title: "Advanced Data Analysis Projects",
+    description: "Built my first portfolio projects (Covid-19 and Cyclistic), analyzing real-world datasets using Excel, MySQL and creating visualizations with Tableau. Deepened my skills in advanced data analysis techniques, delving deeper into advanced SQL queries,  and diving into Python to unlock even more powerful ways to explore, manipulate, and tell stories with data.",
+    year: "Sep 2024 - May 2025",
+    type: "project",
     learnMoreLink: "#projects",
     learnMoreText: "View Projects"
+  },
+  {
+    title: "Building My Portfolio Website",
+    description: "Developed a personal website using React, HTML/CSS, and JavaScript. While building it, I used AI tools like ChatGPT, Claude Code and GitHub Copilot - this sparked my fascination with AI's potential in accelerating tech development.",
+    year: "May 2025 - Jun 2025",
+    type: "website",
+  },
+  {
+    title: "Shift to AI focused Data Automation",
+    description: "Inspired by the power of AI during web development, I started exploring local LLMs, OpenAI and Anthropic models, n8n AI Automation workflows, Lovable.dev - focusing on automating repetitive tasks, integrating systems - building intelligent workflows and executive friendly user interfaces.",
+    year: "May 2025 - Present",
+    type: "ai",
   }
 ];
 
@@ -142,8 +149,9 @@ export default function Timeline() {
       case 'startup': return <FcIdea className="timeline-icon" />;
       case 'career': return <FcBriefcase className="timeline-icon" />;
       case 'google': return <FcGoogle className="timeline-icon" />;
-      case 'project': return <FcAcceptDatabase className="timeline-icon" />;
-      case 'statistics': return <FcStatistics className="timeline-icon" />;
+      case 'project': return <FcStatistics className="timeline-icon" />;
+      case 'website': return <FcGlobe className="timeline-icon" />;
+      case 'ai': return <SiOpenai className="timeline-icon" />;
       default: return null;
     }
   };
@@ -151,7 +159,7 @@ export default function Timeline() {
   return (
     <div id="timeline">
       <div className="section-header">
-        <span className="section-title">My Journey to Data</span>
+        <span className="section-title">My Journey to Data & AI Automation</span>
       </div>
       
       <div className="timeline-wrapper" ref={timelineWrapRef}>
