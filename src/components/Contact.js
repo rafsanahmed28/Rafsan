@@ -185,7 +185,7 @@ export default function Contact() {
       </div>
       <div className="contact-intro">
       <p>
-        I’m currently exploring data analyst opportunities and always open to connecting with like-minded professionals. If you have a role, project, or collaboration in mind, I’d love to hear from you!
+        I'm currently exploring opportunities in AI Automation and workflow orchestration, and I'm always open to connecting with like-minded professionals. If you have a role, project, or collaboration in mind, I’d love to hear from you!
       </p>  
       </div>
       <div className="contact-container">
