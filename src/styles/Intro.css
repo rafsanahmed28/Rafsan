@@ -105,9 +105,9 @@
   font-family: "NTR", sans-serif;
   color: var(--lightest-slate);
   text-align: left;
-  letter-spacing: 0.02em;
   font-size: 36px;
   max-width: 600px;
+  margin-top: 10px;
 }
 
 .intro-subtitle-name {
@@ -122,12 +122,12 @@
 
 .intro-desc {
   color: var(--lightest-slate);
-  letter-spacing: 0.02em;
   line-height: 1.7;
   font-family: "NTR", sans-serif;
   font-size: 20px;
   text-align: left;
-  max-width: 480px;
+  max-width: 600px;
+  margin-top: 10px;
 }
 
 @media (max-width: 1400px) {
