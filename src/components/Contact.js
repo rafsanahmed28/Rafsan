@@ -10,7 +10,6 @@ export default function Contact() {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const formRef = useRef(null);
   const successRef = useRef(null);
   const contactSectionRef = useRef(null);
@@ -132,8 +131,6 @@ export default function Contact() {
         );
       }
     });
-    
-    setIsSubmitted(true);
     
     setTimeout(() => {
       const mailtoUrl = `mailto:${yourEmail}?subject=Contact from ${name}&body=${encodeURIComponent(message)}`;

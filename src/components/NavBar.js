@@ -29,7 +29,6 @@ class NavBar extends React.Component {
     this.logoRef = React.createRef();
     this.initialRenderComplete = false;
     this.starButtonRef = React.createRef();
-    this.logoRef = React.createRef();
 
   }
 

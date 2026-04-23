@@ -28,8 +28,10 @@ function getFileIcon(file) {
 const getInitialOpenFolders = projects =>
   Object.fromEntries(projects.map((_, idx) => [idx, idx === 0]));
 
-const getReadmeIdx = files =>
-  files.findIndex(file => file.name.toLowerCase() === "readme.md") || 0;
+const getReadmeIdx = files => {
+  const idx = files.findIndex(file => file.name.toLowerCase() === "readme.md");
+  return idx === -1 ? 0 : idx;
+};
 
 export default function Projects() {
   const sectionKeys = Object.keys(projectsData);
@@ -72,13 +74,9 @@ export default function Projects() {
       }));
     });
     
-    console.log("Projects data:", projectsData);
-    console.log("Section keys:", sectionKeys);
   }, []);
 
   useEffect(() => {
-    const tl = gsap.timeline();
-    
     gsap.fromTo("#projects .section-title",
       {
         y: 30,
